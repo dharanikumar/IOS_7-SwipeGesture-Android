@@ -15,11 +15,10 @@ Please note that this swipe gesture pattern possible in side Relativelayout. Bec
 ### Two Options at List Item Background
 Sample code for two options on list item background.
 
-//Sample code
-ListView cmn_list_view	            =	(ListView) findViewById(R.id.cmn_list_view);               //Listview
-ListViewSwipeGesture touchListener  = new ListViewSwipeGesture(cmn_list_view, swipeListener, this);
-touchListener.SwipeType	            =	ListViewSwipeGesture.Double;    //Set two options at background of list item, Default
-	// These are optional --- Begins//
+		ListView cmn_list_view	            =	(ListView) findViewById(R.id.cmn_list_view);               //Listview
+		ListViewSwipeGesture touchListener  = new ListViewSwipeGesture(cmn_list_view, swipeListener, this);
+		touchListener.SwipeType	            =	ListViewSwipeGesture.Double;    //Set two options at background of list item, Default
+			// These are optional --- Begins//
 	
 		//attributes for first action
 		touchListener.HalfColor       	=	getResources().getString(R.string.str_green);
@@ -37,14 +36,14 @@ touchListener.SwipeType	            =	ListViewSwipeGesture.Double;    //Set two 
 		
 
 ### Dismiss option
-ListView cmn_list_view	=	(ListView) findViewById(R.id.cmn_list_view);               //Listview
-
-ListViewSwipeGesture touchListener = new ListViewSwipeGesture(cmn_list_view, swipeListener, this);
-		touchListener.SwipeType	=	ListViewSwipeGesture.Dismiss;
-		cmn_list_view.setOnTouchListener(touchListener);
+		ListView cmn_list_view	=	(ListView) findViewById(R.id.cmn_list_view);               //Listview
+		
+		ListViewSwipeGesture touchListener = new ListViewSwipeGesture(cmn_list_view, swipeListener, this);
+				touchListener.SwipeType	=	ListViewSwipeGesture.Dismiss;
+				cmn_list_view.setOnTouchListener(touchListener);
 		
 ### Swipe Gesture Callback functions
-ListViewSwipeGesture.TouchCallbacks swipeListener = new ListViewSwipeGesture.TouchCallbacks() {
+		ListViewSwipeGesture.TouchCallbacks swipeListener = new ListViewSwipeGesture.TouchCallbacks() {
 
 		@Override
 		public void FullSwipeListView(int position) {
