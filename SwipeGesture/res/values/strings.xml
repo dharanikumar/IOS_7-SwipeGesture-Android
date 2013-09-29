@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SwipeGesture</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="basic_action_1">Action_1</string>
+    <string name="basic_action_2">Action_2</string>
+    <string name="basic_del">Delete</string>
+    <string name="str_orange">#fe7b27</string>
+    <string name="str_green">#3cac69</string>
+    <string name="str_red">#FF4444</string>
+    <string name="str_yellow">#FFBB33</string>
+    <string name="str_sky_blue">#33B5E5</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>
