@@ -13,7 +13,7 @@ Please note that this swipe gesture pattern possible in side Relativelayout. Bec
 ##Usage
 
 ### Two Options at List Item Background
-Sample code for two options on list item background
+Sample code for two options on list item background.
 
 ListView cmn_list_view	            =	(ListView) findViewById(R.id.cmn_list_view);               //Listview
 ListViewSwipeGesture touchListener  = new ListViewSwipeGesture(cmn_list_view, swipeListener, this);
