@@ -3,9 +3,9 @@ IOS_7-SwipeGesture-Android
 
 IOS 7 Swipe Gesture in Android listview. This repo provides listview swipe gesture pattern like IOS7 mailbox. messages to your Application.
 
-![IOS_7-SwipeGesture-Android]https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_1.png
-![IOS_7-SwipeGesture-Android]https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_3.png
-![IOS_7-SwipeGesture-Android]https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_5.png
+![IOS_7-SwipeGesture-Android](https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_1.png)
+![IOS_7-SwipeGesture-Android](https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_3.png)
+![IOS_7-SwipeGesture-Android](https://raw.github.com/dharanikumar/IOS_7-SwipeGesture-Android/master/screenshots/Swipe_gesture_5.png)
 
 
 Please note that this swipe gesture pattern possible in side Relativelayout. Because the action options appears at background of listview item.
