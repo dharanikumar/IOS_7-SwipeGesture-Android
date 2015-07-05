@@ -395,8 +395,8 @@ public class ListViewSwipeGesture implements View.OnTouchListener {
 
 
 	private void ResetListItem(View tempView){
-        if(mDismissAnimationRefCount>0)
-        mDismissAnimationRefCount=0;
+	        if(mDismissAnimationRefCount>0)
+	        mDismissAnimationRefCount=0;
 
 	    tempView.animate().translationX(0).alpha(1f).setListener(new AnimatorListenerAdapter(){
 	        @Override
