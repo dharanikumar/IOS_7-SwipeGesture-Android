@@ -395,24 +395,27 @@ public class ListViewSwipeGesture implements View.OnTouchListener {
 
 
 	private void ResetListItem(View tempView){
-        Log.d("Shortlist reset call","Works");
-        tempView.animate().translationX(0).alpha(1f).setListener(new AnimatorListenerAdapter(){
-            @Override
-            public void onAnimationEnd(
-                    Animator animation) {
-                super.onAnimationEnd(animation);
-                int count=mDownView_parent.getChildCount()-1;
-                for(int i=0;i<count;i++){
-                    View V=	mDownView_parent.getChildAt(i);
-                    Log.d("removing child class",""+V.getClass());
-                    mDownView_parent.removeViewAt(0);
-                }
-                moptionsDisplay	= false;
+        if(mDismissAnimationRefCount>0)
+        mDismissAnimationRefCount=0;
 
-            }
-        });
-        stagged_position=-1;
-        opened_position=-1;
+	    tempView.animate().translationX(0).alpha(1f).setListener(new AnimatorListenerAdapter(){
+	        @Override
+	        public void onAnimationEnd(
+	                Animator animation) {
+	            super.onAnimationEnd(animation);
+	            int count=mDownView_parent.getChildCount()-1;
+	            for(int i=0;i<count;i++){
+	                View V= mDownView_parent.getChildAt(i);
+	                Log.d("removing child class",""+V.getClass());
+	                mDownView_parent.removeViewAt(0);
+	            }
+	            moptionsDisplay = false;
+	
+	        }
+	    });
+	    
+	    stagged_position=-1;
+	    opened_position=-1;
 
     }
 
